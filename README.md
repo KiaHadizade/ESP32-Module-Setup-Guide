@@ -67,7 +67,7 @@ Download and install the Thonny IDE from the official website:
     - **Interpreter**: MicroPython (ESP32)
     - **Port**: Select the port your ESP32 is on (COM3)
 - Now you should see a prompt like this in shell (REPL):
-    `$ MicroPython v1.22.x on 2025-xx-xx; ESP32 module with ESP32`
+`$ MicroPython v1.22.x on 2025-xx-xx; ESP32 module with ESP32`
 
 > [!NOTE]
 > Easy and lightweight IDE with built-in MicroPython support
