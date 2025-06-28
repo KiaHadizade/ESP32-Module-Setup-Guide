@@ -35,8 +35,8 @@ $ pip install esptool
 ### 3. Erase existing firmware (optional but recommended)
 
 Identify the serial port:
-- On **Windows**: something like COM3
-- On **Linux/macOS**: something like /dev/ttyUSB0 or /dev/tty.SLAB_USBtoUART
+- On **Windows**: something like `COM3`
+- On **Linux/macOS**: something like `/dev/ttyUSB0` or `/dev/tty.SLAB_USBtoUART`
 
 Then run:
 ``` bash
