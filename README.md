@@ -99,3 +99,37 @@ Onboard LED should now blink every half second
 > Downloaded zip file named ESP32-ChatGPT-V2-main from [Techiesms](https://github.com/techiesms/ESP32-ChatGPT-V2)<br>
 > Downloaded zip file named KALO-ESP32-Voice-Assistant-main from [kaloprojects](https://github.com/kaloprojects/KALO-ESP32-Voice-Assistant)<br>
 > Downloaded zip file named ESP32-audioI2S-master from [Schreibfaul1](https://github.com/schreibfaul1/ESP32-audioI2S)
+
+## 🔦 TCRT5000-based IR Sensor Module
+
+### What It Is
+It's often used for:
+- Object detection
+- Obstacle avoidance (in robots)
+- Line following sensors (in simpler variants)
+
+### Parts on the Module
+- Clear diode: Infrared LED (emits IR light).
+- Dark diode: Photodiode or phototransistor (detects reflected IR).
+- Blue potentiometer (trimmer): Used to adjust sensitivity or detection range.
+- Comparator IC (usually LM393): Compares the signal from the photodiode with a threshold and outputs HIGH or LOW.
+- 3 Pins typically:
+    - VCC (usually 3.3V or 5V)
+    - GND
+    - OUT (digital signal – HIGH or LOW depending on IR detection)
+
+### How It Works
+1. The IR LED emits infrared light.
+2. If an object is close in front, it reflects IR light back.
+3. The photodiode detects the reflection.
+4. The module outputs a LOW signal on the `OUT` pin when it detects something (usually).
+5. If nothing is detected, `OUT` stays HIGH.
+
+IR sensors output:
+    HIGH (1) → when nothing is detected
+    LOW (0) → when object is detected
+
+> [!TIP]
+> If the sensor is too sensitive (always stays high):<br>
+> Use a small screwdriver to gently rotate the blue potentiometer (the screw) to change how far the sensor can see (i.e., reflect IR).
+> Turn counter-clockwise to adjust the sensitivity to low.
