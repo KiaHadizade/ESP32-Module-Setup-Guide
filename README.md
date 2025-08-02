@@ -121,6 +121,8 @@ It's often used for:
 4. The module outputs a LOW signal on the `OUT` pin when it detects something (usually).
 5. If nothing is detected, `OUT` stays HIGH.
 
+👉 Run `TCRT5000-based-IR-Sensor-Module.py` file to check output
+
 IR sensors output:<br>
     HIGH (1) → when nothing is detected<br>
     LOW (0) → when object is detected
