@@ -13,7 +13,15 @@ A beginner-friendly guide to setting up MicroPython on your ESP32 development bo
 ## 🔌 Connect ESP32 to PC
 
 1. Plug the ESP32 into your computer using the micro USB cable
-2. Make sure the correct driver is installed (e.g., CP210x or CH340, depending on your board)[^1]
+2. Make sure the correct driver is installed (e.g., CP210x or CH340, depending on your board)
+
+> [!TIP]
+> Finding the COM port your ESP32 is using:<br>
+> Press Win + X → Click Device Manager<br>
+> Expand Ports (COM & LPT)<br>
+> Look for something like:<br>
+> `Silicon Labs CP210x USB to UART Bridge (COM3)`<br>
+> Note the COM port number (e.g., COM3 or COM4). That’s what you’ll use in the --port option for esptool.py
 
 ## 🔧 Flash MicroPython Firmware to the ESP32
 
@@ -88,18 +96,6 @@ while True:
 ```
 Onboard LED should now blink every half second
 
-> [!TIP]
-> [^1] Finding the COM port your ESP32 is using:<br>
-> Press Win + X → Click Device Manager<br>
-> Expand Ports (COM & LPT)<br>
-> Look for something like:<br>
-> `Silicon Labs CP210x USB to UART Bridge (COM3)`<br>
-> Note the COM port number (e.g., COM3 or COM4). That’s what you’ll use in the --port option for esptool.py
-
-> Downloaded zip file named ESP32-ChatGPT-V2-main from [Techiesms](https://github.com/techiesms/ESP32-ChatGPT-V2)<br>
-> Downloaded zip file named KALO-ESP32-Voice-Assistant-main from [kaloprojects](https://github.com/kaloprojects/KALO-ESP32-Voice-Assistant)<br>
-> Downloaded zip file named ESP32-audioI2S-master from [Schreibfaul1](https://github.com/schreibfaul1/ESP32-audioI2S)
-
 ## 🔦 TCRT5000-based IR Sensor Module
 
 ### What It Is
@@ -125,11 +121,11 @@ It's often used for:
 4. The module outputs a LOW signal on the `OUT` pin when it detects something (usually).
 5. If nothing is detected, `OUT` stays HIGH.
 
-IR sensors output:
-    HIGH (1) → when nothing is detected
+IR sensors output:<br>
+    HIGH (1) → when nothing is detected<br>
     LOW (0) → when object is detected
 
 > [!TIP]
 > If the sensor is too sensitive (always stays high):<br>
-> Use a small screwdriver to gently rotate the blue potentiometer (the screw) to change how far the sensor can see (i.e., reflect IR).
+> Use a small screwdriver to gently rotate the trimmer (the screw) to change how far the sensor can see (i.e., reflect IR).<br>
 > Turn counter-clockwise to adjust the sensitivity to low.
