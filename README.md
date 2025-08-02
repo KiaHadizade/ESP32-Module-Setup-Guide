@@ -96,6 +96,6 @@ Onboard LED should now blink every half second
 > `Silicon Labs CP210x USB to UART Bridge (COM3)`<br>
 > Note the COM port number (e.g., COM3 or COM4). That’s what you’ll use in the --port option for esptool.py
 
-> Downloaded zip file named ESP32-ChatGPT-V2-main from [Github](https://github.com/techiesms/ESP32-ChatGPT-V2)<br>
-> Downloaded zip file named KALO-ESP32-Voice-Assistant-main from [Github](https://github.com/kaloprojects/KALO-ESP32-Voice-Assistant)<br>
-> Downloaded zip file named ESP32-audioI2S-master from [Github](https://github.com/schreibfaul1/ESP32-audioI2S)
+> Downloaded zip file named ESP32-ChatGPT-V2-main from [Techiesms](https://github.com/techiesms/ESP32-ChatGPT-V2)<br>
+> Downloaded zip file named KALO-ESP32-Voice-Assistant-main from [kaloprojects](https://github.com/kaloprojects/KALO-ESP32-Voice-Assistant)<br>
+> Downloaded zip file named ESP32-audioI2S-master from [Schreibfaul1](https://github.com/schreibfaul1/ESP32-audioI2S)
