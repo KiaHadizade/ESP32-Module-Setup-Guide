@@ -131,3 +131,11 @@ IR sensors output:<br>
 > If the sensor is too sensitive (always stays high):<br>
 > Use a small screwdriver to gently rotate the trimmer (the screw) to change how far the sensor can see (i.e., reflect IR).<br>
 > Turn counter-clockwise to adjust the sensitivity to low.
+
+## 📡 Connecting ESP32 to Wi-Fi Network
+
+### Prerequisites
+- ESP32 board with MicroPython firmware installed.
+- Your Wi-Fi SSID and password.
+
+👉 Run `Wi-Fi_setup.py` file to connect to and disconnect from Wi-Fi
