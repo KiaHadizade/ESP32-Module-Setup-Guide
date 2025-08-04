@@ -97,7 +97,7 @@ while True:
 Onboard LED should now blink every half second
 
 ## 🔦 TCRT5000-based IR Sensor Module
-
+![TCRT5000 Infrared Obstacle Avoidance Sensor Module](https://www.google.com/url?sa=i&url=https%3A%2F%2Fcircuit.rocks%2Fproducts%2Fproduct-2201&psig=AOvVaw2BgRkqyAdyl8Lux2g04GtO&ust=1754406114346000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCJiJrp628Y4DFQAAAAAdAAAAABAL)
 ### What It Is
 It's often used for:
 - Object detection
